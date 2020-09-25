@@ -1,1 +1,1 @@
-# Api_ranking
+Proyecto para crear una api, un ranking y mucha desesperacion.
