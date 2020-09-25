@@ -26,7 +26,7 @@ def get_github(endpoint, apiKey=os.getenv("GH_APIKEY"), query_params={}):
 
 
 
-def api_extraction(data):
+def extraccion_api(data):
 
     dictionary=[]
     for x in range(0,len(data)):
@@ -39,7 +39,6 @@ def api_extraction(data):
             'updated_at':data[x]['updated_at'],
             'closed_at':data[x]['closed_at'],
             'html_url':data[x]['html_url'],
-            'meme':meme(data[x])
             }
             dictionary.append(name)
         except:
@@ -51,7 +50,6 @@ def api_extraction(data):
             'updated_at':data[x]['updated_at'],
             'closed_at':data[x]['closed_at'],
             'html_url':data[x]['html_url'],
-            'meme':meme(data[x])
             }
             dictionary.append(name)
             
